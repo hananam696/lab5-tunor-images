@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
+name: extract_features_env
+version: 6
+image: mcr.microsoft.com/azureml/minimal-ubuntu18.04-py38-cpu:latest
+
+conda_file: conda_dependencies.yml

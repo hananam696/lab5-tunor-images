@@ -1,0 +1,14 @@
+name: extract_features_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+      - numpy
+      - pandas
+      - scikit-image
+      - opencv-python
+      - pyarrow
+      - azureml-core
+      - azureml-mlflow

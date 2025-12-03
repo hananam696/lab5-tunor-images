@@ -1,0 +1,20 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: extract_features_component
+version: 6
+type: command
+
+inputs:
+  input_images:
+    type: uri_folder
+
+outputs:
+  output_features:
+    type: uri_folder
+
+environment: azureml:extract_features_env:6
+
+code: .
+command: >-
+  python extract_features.py
+        --input_images ${{inputs.input_images}}
+        --output_features ${{outputs.output_features}}
