@@ -12,4 +12,4 @@ Then, in the Azure ML notebook, the feature extraction code was run to generate 
 
 **Phase 3: Gold Layer -> Data ready for modelling**
 
-The parquet files were then splited and saved into data splititng feature etrival and selection ws done then did training model 
+The Silver parquet files were first split into train and test sets using the feature retrieval code. The resulting files, train.parquet and test.parquet, were saved in the gold/data_splitting folder. Next, the feature selection code was run, producing and saving ga_metrics.json, baseline_metrics.json, and selected_features.json in the gold/feature_selection folder. Finally, the Random Forest model was trained using the selected features, metrics were saved, and the trained model was registered in the Azure ML Workspace.
