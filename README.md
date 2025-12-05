@@ -1,1 +1,1 @@
-# lab5-tunor-images
+# lab5-tumor-images
