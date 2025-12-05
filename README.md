@@ -1,4 +1,4 @@
-# lab5-tunor-images
+# lab5-tumor-images
 
 All layer codes for this project are organised inside the src/ folder
 **Phase 1: Bronze Layer ->  Data Ingestion**
