@@ -22,3 +22,9 @@ All layer codes for this project are organised inside the src/ folder, and the p
 
 ## **Pipeline Overview:**
 The Azure ML pipeline (pipeline_job.py) automates the workflow from Bronze to Gold layers. It links the ingestion, feature extraction, feature selection, and model training steps, passing outputs between components so the entire process runs end-to-end without manual intervention. While the feature store integration was skipped, the pipeline captures GA metrics versus baseline metrics and saves train/test Parquet files, selected features, and the trained model. This pipeline enables reproducible experimentation, reduces manual errors, and can be extended to deploy an online endpoint for single-image tumor predictions, demonstrating a full MLOps workflow for MRI tumor detection.
+
+**info ga**
+GA Approach vs Baseline: GA feature selection was applied to optimize model features; baseline metrics are also saved for comparison (baseline_metrics.json vs ga_metrics.json).
+Silver Runtime: Feature extraction took ~X minutes (insert approximate runtime).
+Compute Usage: Standard CPU cluster was used; for GPU-enabled extraction, runtime may vary.
+Endpoint: The trained model is prepared for deployment. The Azure ML endpoint can accept a single MRI image and return “tumor” or “no tumor.”
