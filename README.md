@@ -1,11 +1,12 @@
 # lab5-tumor-images
-
+**Half of the lab was done using CLI and other half was done in Azure ML**
+**Storage name: tumorimages6010475, Azure ML workspace name: lab5-60104758**
 All layer codes for this project are organised inside the src/ folder
 pipeline code in file `pipeline_job.py`
 
 **Phase 1: Bronze Layer ->  Data Ingestion**
 
-Created containers and respective class folders in Azure, then programmatically ingested the image data into the correct folders using a Python script. Azure was accessed via CLI through the VS Code terminal to upload the images. The dataset was then registered in the Azure ML Workspace as a data asset.
+Created containers and respective class folders in Azure, then programmatically ingested the image data into the correct folders using a Python script. Azure was accessed via CLI through the VS Code terminal to upload the images. The dataset was then registered in the Azure ML Workspace as a data asset called `tumor_images_raw`.
 
 **Phase 2: Silver Layer -> Data saved as Parquet**
 
